@@ -2,7 +2,8 @@
 
 https://delish-food-delivery.000webhostapp.com/
 
-A food delivery website made using HTML,CSS for Frontend, SQL for Backend and JS and PHP as a tool to connect to SQL
+A food delivery website made using HTML,CSS for Frontend, SQL for Backend and JS and PHP as a tool to connect to SQL.
+This Website is Made only for Mobile devices as most of the online food delivery happen on Mobile phones rather than on a Computer.
 ![Screenshot 2023-01-14 003511](https://user-images.githubusercontent.com/62425415/212398890-96f0a4b3-94b2-4cf6-807d-9f046fdb1c60.png)
 ![Screenshot 2023-01-14 003511](https://user-images.githubusercontent.com/62425415/212399095-ef6ceb5d-5917-4c28-9f39-f785555b0903.png)
 ![Screenshot 2023-01-14 004109](https://user-images.githubusercontent.com/62425415/212400298-96eb6810-edc2-4c7b-a967-b4e76be3df91.png)
@@ -14,3 +15,8 @@ A food delivery website made using HTML,CSS for Frontend, SQL for Backend and JS
 ![Screenshot 2023-01-14 004109](https://user-images.githubusercontent.com/62425415/212400172-7d9e701d-54fd-4774-8d0c-2f8529136941.png)
 ![Screenshot 2023-01-14 004109](https://user-images.githubusercontent.com/62425415/212400483-358af1a9-ca83-471a-b221-f06ba08424fd.png)
 ![Screenshot 2023-01-14 004109](https://user-images.githubusercontent.com/62425415/212400812-550525a3-e99c-4a60-8db4-11f88e16ef8d.png)
+
+
+
+
+*This website is not responsive(does not adapt efficiently with change in screen sizes)
