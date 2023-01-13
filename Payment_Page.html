@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <script src="homePage.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+
+    <script src="https://kit.fontawesome.com/037f9c9df6.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;700&display=swap'); </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); </style>
+
+    <link rel="stylesheet" href="style_homePage.css">
+    
+    <title>Delish-Checkout</title>
+</head>
+<body onload="removeBanner()">
+    <img src="Assets/Images/Asthetic Art.png" class="asthetic_art">
+    <div class="about_us_header_header" style="position: relative;"><p class="about_us_logo_text">Delish</p></div>
+
+
+    <div class="ui form">
+        <p class="My_Cart_heading">How would you like to pay?</p>
+        <div class="grouped_fields">
+            <div class="field" style="gap: 3.7vw;">
+                <div class="ui_radio_checkbox">
+                    <input type="radio" name="deliveryOption" onchange="deliveryOption('DebitOrCredit')" id="radio_credit">
+                    <label class="radio_text">Debit/Credit Card</label>
+                </div>
+                <img src="Assets/Icons/Visa_icon.png" class="payment_icons">
+                <img src="Assets/Icons/MasterCard_icon.png" class="payment_icons">
+            </div>
+
+            <div style="background-color: rgb(42,48,69);display: none;" id="credit_debit_div">
+                <div style="display: flex;flex-wrap: wrap;width: 80vw;margin: auto;border-style: none none solid none;border-width: thin;border-color: var(--primaryColor1D);">
+                    <p style="color: rgba(255, 255, 255, 0.8);width: 38vw;margin-top: 10px;margin-bottom: 10px;">Card Holder Name</p>
+                    <input placeholder="Name" class="input_box_payment" style="width: 42vw;">
+                </div>
+                <div style="display: flex;flex-wrap: wrap;width: 80vw;margin: auto;border-style: none none solid none;border-width: thin;border-color: var(--primaryColor1D);">
+                    <p style="color: rgba(255, 255, 255, 0.8);width: 38vw;margin-top: 10px;margin-bottom: 10px;">Card number</p>
+                    <input type="number" placeholder="- - - -  - - - -  - - - -  - - - -" class="input_box_payment" style="width: 42vw;">
+                </div>
+                <div style="display: flex;flex-wrap: wrap;width: 80vw;margin: auto;border-style: none none solid none;border-width: thin;border-color: var(--primaryColor1D);">
+                    <p style="color: rgba(255, 255, 255, 0.8);width: 14vw;margin-top: 10px;margin-bottom: 10px;">Expiry</p>
+                    <input placeholder="MM/YY" class="input_box_payment" style="width: 15vw;">
+                    <p style="color: rgba(255, 255, 255, 0.8);width: 14vw;margin-top: 10px;margin-bottom: 10px;margin-left: 20vw;">CVV</p>
+                    <input type="number" placeholder="- - -" class="input_box_payment" style="width: 15vw;">
+                </div>
+            </div>
+
+            <div class="field" style="border-style: solid none solid none;border-width: thin;border-color: var(--primaryColor2D);">
+                <div class="ui_radio_checkbox">
+                    <input type="radio" name="deliveryOption" onchange="deliveryOption('UPI')" id="radio_upi">
+                    <label class="radio_text">UPI Apps</label>
+                </div>
+                <img src="Assets/Icons/UPI_icon.png" class="payment_icons">
+            </div>
+
+            <div style="background-color: rgb(42,48,69);display: none;" id="upi_div">
+                <div style="display: flex;flex-wrap: wrap;width: 80vw;margin: auto;border-style: none none solid none;border-width: thin;border-color: var(--primaryColor1D);">
+                    <p style="color: rgba(255, 255, 255, 0.8);width: 15vw;margin-top: 10px;margin-bottom: 10px;">UPI Id</p>
+                    <input placeholder="UPI id" class="input_box_payment" style="width: 65vw;">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="ui_radio_checkbox">
+                    <input type="radio" name="deliveryOption" onchange="deliveryOption('CashOnDelivery')" id="radio_cod">
+                    <label class="radio_text">Cash On Delivery</label>
+                </div>
+                <img src="Assets/Icons/cash_icon.png" class="payment_icons">
+            </div>
+        </div>
+    </div>
+
+
+    <a class="login_signUp_btn" style="margin-bottom: 30px;" id="button_click_please" onclick="pay_securely(this)">Pay Securely</a>
+
+</body>
