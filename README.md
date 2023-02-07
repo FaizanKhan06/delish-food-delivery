@@ -24,6 +24,9 @@ A food delivery website made using HTML,CSS for Frontend, SQL for Backend and JS
 
 ![image](https://user-images.githubusercontent.com/62425415/217244477-036985f6-3969-4ec3-ad6b-fbced939e8a6.png)
 
+[Delish PPT.pptx](https://github.com/FaizanKhan06/delish-food-delivery/files/10675086/Delish.PPT.pptx)
+
+
 
 
 *This website is not responsive(does not adapt efficiently with change in screen sizes)
