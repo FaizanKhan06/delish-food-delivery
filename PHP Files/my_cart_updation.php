@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     $get = $_REQUEST['get'];
 
@@ -45,4 +46,47 @@
             echo "{$row['id']},{$row['Name']},{$row['Description']},{$row['img_src']},{$Total1},{$row['Type']},{$row['detail_img_src']}";
         }
     }
+=======
+<?php
+    $get = $_REQUEST['get'];
+
+    $servername = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'delish-food-delivery';
+    
+    if($get == "1"){
+        $order_no = $_REQUEST['order_no'];
+    
+    
+        $conn = new mysqli($servername,$username,$password,$database);
+        if($conn->connect_error){
+            echo"Connection Failed";
+        }
+        else{
+            $query = "SELECT * FROM `order_detail_table` where order_no='$order_no'";
+            $result = mysqli_query($conn,$query);
+    
+            while ($row = $result->fetch_array(MYSQLI_ASSOC)){
+                echo $row['menu_id'],",",$row['no_of_items'],",";
+            }
+        }
+    }
+    else{
+        $id = $_REQUEST['id'];
+    
+        $conn = new mysqli($servername,$username,$password,$database);
+        if($conn->connect_error){
+            echo"Connection Failed";
+        }
+        else{
+            $query = "SELECT * FROM `menu_items` where id='$id'";
+            $result = mysqli_query($conn,$query);
+    
+            $row = mysqli_fetch_assoc($result);
+            
+            echo "{$row['id']},{$row['Name']},{$row['Description']},{$row['img_src']},{$row['Price']},{$row['Type']},{$row['detail_img_src']}";
+        }
+    }
+>>>>>>> 7ace156 (Final Commit)
 ?>

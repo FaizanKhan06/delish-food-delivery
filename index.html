@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <head>
     <script src="homePage.js"></script>
@@ -88,4 +89,96 @@
         </div>
     </div>
 
+=======
+<!DOCTYPE html>
+<head>
+    <script src="homePage.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+
+    <script src="https://kit.fontawesome.com/0dc0dd2589.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;700&display=swap'); </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); </style>
+
+    <link rel="stylesheet" href="style_homePage.css">
+    
+    <title>Delish-Login</title>
+</head>
+<body style="overflow-y: hidden;" onload="removeBanner()">
+
+    <img src="Assets/Images/Login_bg.jpg" class="login_bg">
+    <div class="login_bg_effects"></div>
+    <div class="login_logo">
+        <p class="logo">Delish</p>
+        <p class="logo" style="padding: 0;margin: 0;font-size: 25px;">Delicious Food Everywhere..</p>
+    </div>
+    <div class="login_details">
+        <a class="login_signUp_btn" onclick="OpenLogin()">LOGIN</a>
+        <a class="login_signUp_btn" onclick="OpenSignUp()">SIGN UP</a>
+        <a class="login_later_btn" onclick="goingToHomePage(this)">I'll log in later</a>
+        <p class="login_signUp_tAc">By logging in you agree to Delish's <u>Terms Of Services</u>, <u>Privacy Policy</u> and <u>Content Policies</u>.</p>
+    </div>
+
+    <div class="login_panel_div">
+        <button class="login_close_btn" onclick="CloseLogin()">LOGIN</button>
+
+        <div class="login_panel">
+            <i class="fa-solid fa-xmark close_btn_login_signUp" onclick="CloseLogin()"></i>
+            <p class="login_panel_heading">Login</p>
+            <input placeholder="Username" class="login_signup_input_place_holder" id="UsernameLogin">
+            <div class="password_holder">
+                <input placeholder="Password" type="password" class="login_signup_input_place_holder password" id="PasswordLogin">
+                <i class="fa-solid fa-eye eye" onclick="showPassword(this)"></i>
+            </div>
+            <div class="RememberMe_Btn">
+                <input type="checkbox" id="RememberMe" name="RememberMe" value="1">
+                <label for="RememberMe">Remember Me</label><br>
+            </div>
+            <p style="color: red;font-size: small;margin: 0 auto;width: 80vw;display: none;text-align: center;" id="login_does_not_match">Passwords Does not match.</p>
+            <a class="login_signUp_btn" onclick="LoginBtnClicked(this)" id="login_btn_loginPage">LOGIN</a>
+        </div>
+    </div>
+
+    <div class="signup_panel_div">
+        <button class="signUp_close_btn" onclick="CloseSignUp()">LOGIN</button>
+        
+        <div class="signup_panel" style="overflow-y: scroll;">
+
+            <i class="fa-solid fa-xmark close_btn_login_signUp" onclick="CloseSignUp()"></i>
+            <p class="login_panel_heading">Sign Up</p>
+            <div class="name_div_signup">
+                <input placeholder="First Name" class="signup_input_Name" id="FirstName">
+                <input placeholder="Last Name" class="signup_input_Name" id="LastName">
+            </div>
+            <input placeholder="Username" class="login_signup_input_place_holder" id="Username">
+            <input placeholder="Phone Number" class="login_signup_input_place_holder" id="PhoneNumber">
+            <div class="password_holder">
+                <input placeholder="Password" type="password" class="login_signup_input_place_holder password" id="Password">
+                <i class="fa-solid fa-eye eye" onclick="showPassword(this)"></i>
+            </div>
+            <div class="password_holder">
+                <input placeholder="Confirm Password" type="password" class="login_signup_input_place_holder password" id="ConfirmPassword">
+                <i class="fa-solid fa-eye eye" onclick="showPassword(this)"></i>
+            </div>
+            <p class="address_heading_signUp">Address</p>
+            <input placeholder="Street Address" class="login_signup_input_place_holder" id="Street">
+            <div class="name_div_signup">
+                <input placeholder="City" class="signup_input_Name" id="City">
+                <input placeholder="State" class="signup_input_Name" id="State">
+            </div>
+            <div class="name_div_signup">
+                <input placeholder="House No" class="signup_input_Name" id="HouseNo">
+                <input placeholder="Zip Code" class="signup_input_Name" id="ZipCode">
+            </div>
+            <p style="color: red;font-size: small;margin: 0 auto;width: 80vw;display: none;text-align: center;" id="signup_already_exists">Passwords Does not match.</p>
+            <a class="login_signUp_btn" style="margin-bottom: 50px;" onclick="SignUpBtnClicked(this)" id="sighnup_btn_loginPage">Sign Up</a>
+
+        </div>
+    </div>
+
+>>>>>>> 7ace156 (Final Commit)
 </body>
